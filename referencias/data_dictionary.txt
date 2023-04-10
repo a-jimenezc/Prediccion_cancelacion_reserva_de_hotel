@@ -1,0 +1,41 @@
+El conjutno de datos fue descargado de Kaggle. Estos se encuentran bajo el nombre "Hotel Reservations Dataset" y fueron subidos por Ahsan Raza. Cuenta con 36275 observaciones. Los atributos de las reservas de los clientes son los siguientes:
+
+Booking_ID: identificador único de cada reserva.
+
+no_of_adults: número de adultos.
+
+no_of_children: número de niños.
+
+no_of_weekend_nights: número de noches de fin de semana (sábado o domingo) que el huésped se quedó o reservó para quedarse en el hotel.
+
+no_of_week_nights: número de noches de semana (de lunes a viernes) que el huésped se quedó o reservó para quedarse en el hotel.
+
+type_of_meal_plan: tipo de plan de comidas reservado por el cliente.
+
+required_car_parking_space: ¿El cliente requiere espacio de estacionamiento para automóviles? (0 - No, 1- Sí).
+
+room_type_reserved: tipo de habitación reservada por el cliente. Los valores están codificados por INN Hotels.
+
+lead_time: número de días entre la fecha de reserva y la fecha de llegada.
+
+arrival_year: año de la fecha de llegada.
+
+arrival_month: mes de la fecha de llegada.
+
+arrival_date: día del mes de la fecha de llegada.
+
+market_segment_type: designación del segmento de mercado.
+
+repeated_guest: ¿El cliente es un huésped repetido? (0 - No, 1- Sí).
+
+no_of_previous_cancellations: número de reservas anteriores canceladas por el cliente antes de la reserva actual.
+
+no_of_previous_bookings_not_canceled: número de reservas anteriores no canceladas por el cliente antes de la reserva actual.
+
+avg_price_per_room: precio promedio por día de la reserva; los precios de las habitaciones son dinámicos (en euros).
+
+no_of_special_requests: número total de solicitudes especiales realizadas por el cliente (por ejemplo, piso alto, vista desde la habitación, etc.).
+
+booking_status: indicador de si la reserva fue cancelada o no.
+
+Para mayor información consultar con el diccionario de datos en la carpeta referencias.
