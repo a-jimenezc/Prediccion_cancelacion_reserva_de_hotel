@@ -1,8 +1,7 @@
-## Segmentación de Clientes
+## Predicción de Cancelación de Reserva de Hotel
 
 ### Objetivo
-
-El objetivo del presente trabajo es segmentar a los clientes de un supermercado en un número reducido de grupos, esto a partir de información obtenida a través de las tarjetas de membresía.
+El objetivo del presente trabajo es desarrollar un modelo que permita predecir si un cliente cancelará o no su reservación de hotel. Se prioriza la capacidad de predicción del modelo sobre la explicabilidad.
 
 ### Prerequisitos
 
@@ -10,57 +9,45 @@ Las librerias necesarias están listadas en requirements.txt. También se incluy
 
 ### Datos
 
-El conjutno de datos proviene de Kaggle bajo el nombre de "Customer Clustering", el cual fue subido por Dev Sharma. Este cuenta con 2000 observaciones.
+El conjutno de datos fue descargado de Kaggle, bajo el nombre "Hotel Reservations Dataset" y cuenta con 36275 observaciones.
 
 Ver la carpeta de referencias para más información.
 
 ### Exploración Inicial de Datos
 
-El conjunto de datos se compone de variables numericas, ordinales y categoricas. La mayoria de los clientes se encuentra entre los 20 y 60 años y tienen ingresos medio-altos.
+Se cuenta con variables numericas y categoricas. La variable objetivo cuenta con dos clases.
 
-<img src="referencias/images/age.png" alt="Alt text 1" width="500"/>
+<img src="referencias/images/target.png" alt="Alt text 1" width="500"/>
 
-También, se puede observar que existe correlación entre ciertas variables numéricas. 
+Luego, se puede observar que existe correlación entre ciertas variables numéricasy la variable objetivo. Se usa la correlación de Spearman, dado que se tiene una variable binaria y varialbles continuas. 
 
 <img src="referencias/images/corr.png" alt="Alt text 1" width="300"/>
 
 ### Construcción del modelo
-Tres algoritmos de agrupamiento distintos fueron implementados: K-means, HDBSCAN y Gaussian Mixture Model. En cada caso,  se determinaron los mejores hiper-parámetros. Se utilizó la biblioteca Scikit-learn para K-means y GMM, mientras que para el algoritmo HDBSCAN se utilizó la implementación provista por la biblioteca hdbscan.
-
-Se utilizaron varias técnicas para la selección de los hiperparámetros para cada algoritmo.
-
-- Para K-means se utilizó una combinación entre el método del codo (elbow curve) que usa la métrica inercia, y la métrica de la silueta.
-
-<img src="referencias/images/elbow.png" alt="Alt text 1" width="300"/> <img src="referencias/images/silhouette.png" alt="Alt text 2" width="300"/>
-
-- Para HDBSCAN se utilizó la métrica de la silueta.
-- Para GMM se utilizó la métrica BIC (Bayesian Information Criterion) junto con la métrica score para escoger los valor más óptimos.
-
-<img src="referencias/images/bic.png" alt="Alt text 1" width="300"/>
+Cuatro modelos diferentes: Logistic Regression, K-Nearest Neighbor, Extra Tree Classifier, Gradient Boosing. En cada caso,  se determinaron los mejores hiper-parámetros utilizando Grid Search. Para tal propósito, se usó la libreria Scikit-learn.
 
 ### Selección del modelo
 
-A continuación se ilustra los resultados de cada uno de los modelos.
+A continuación se ilustra los resultados de cada uno de los modelos. La métrica utilizada es "f1"; esta se usa debido al ligero desbalance en la variable objetivo.
 
-<img src="referencias/images/comparison.png" alt="Alt text 1" width="400"/>
+<img src="referencias/images/scores.png" alt="Alt text 1" width="400"/>
 
-De la anterior gráfica, se escoje el algoritmo K-mean con K=4, cuatro grupos. Su desempeño es bueno y tiene un "reducido" número de grupos. 
+El algoritmo seleccionado es "Gradient Boosting", con "learning_rate=1" y "n_estimators=600"
 
 
 ### Resultados del Modelo
 
-Se realiza una inspección visual de los resultados de este algoritmo, tomando variables de a dos y de a tres. Con esto se puede tener cierta intuición de como los datos están siendo agrupados.
+Finalmente, se evaluan distintas métricas para el algoritmo seleccionado.
 
 
-<img src="referencias/images/result3.png" alt="Alt text 1" width="600"/> 
+<img src="referencias/images/result.png" alt="Alt text 1" width="600"/> 
 
-<img src="referencias/images/result1.png" alt="Alt text 1" width="300"/> <img src="referencias/images/result2.png" alt="Alt text 2" width="300"/>
-  
+De los resultados, se puede ver que el modelo se desempeña bastante bien con ambas clases. Si bien la métrica "recall" de la clase "canceled" (que mide que tan bien clasifica los valores positivos de esta clase) esta baja relativa a la de la clase "not_canceled", su valor esta dentro de un margen aceptable.
 
 
 ### Conclusiones
 
-K-means es el modelo que mejor se desempeña con estos datos y con el requerimiento de tener un número "pequeño" de grupos. Sin embargo, todavía es posible mejorar este modelo buscando de forma exhaustiva hiperparámetros más óptimos.
+"Gradient Boosting" es el modelo que mejor se desempeña, este consigue resultados satisfactorios. Sin embargo, todavía es posible mejorar este modelo buscando de forma exhaustiva hiperparámetros más óptimos. Además, si se desea interpretabilidad, es necesario usar técnicas especiales para tal propósito, dada la complejidad del mismo.
 
 ### Contacto
 
