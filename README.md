@@ -17,7 +17,7 @@ Ver la carpeta de referencias para más información.
 
 Se cuenta con variables numericas y categoricas. La variable objetivo cuenta con dos clases.
 
-<img src="referencias/images/target.png" alt="Alt text 1" width="500"/>
+<img src="referencias/images/target.png" alt="Alt text 1" width="200"/>
 
 Luego, se puede observar que existe correlación entre ciertas variables numéricasy la variable objetivo. Se usa la correlación de Spearman, dado que se tiene una variable binaria y varialbles continuas. 
 
@@ -30,7 +30,7 @@ Cuatro modelos diferentes: Logistic Regression, K-Nearest Neighbor, Extra Tree C
 
 A continuación se ilustra los resultados de cada uno de los modelos. La métrica utilizada es "f1"; esta se usa debido al ligero desbalance en la variable objetivo.
 
-<img src="referencias/images/scores.png" alt="Alt text 1" width="400"/>
+<img src="referencias/images/scores.png" alt="Alt text 1" width="600"/>
 
 El algoritmo seleccionado es "Gradient Boosting", con "learning_rate=1" y "n_estimators=600"
 
