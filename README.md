@@ -19,7 +19,7 @@ Se cuenta con variables numéricas y categóricas. La variable objetivo cuenta c
 
 <img src="referencias/images/target.png" alt="Alt text 1" width="400"/>
 
-Además se puede observar que existe correlación entre ciertas variables numéricasy la variable objetivo. Se usa la correlación de Spearman, dado que se tiene una variable binaria y varialbles continuas. 
+Además se puede observar que existe correlación entre ciertas variables numéricas y la variable objetivo. Se usa la correlación de Spearman, dado que se tiene una variable binaria y variables continuas. 
 
 <img src="referencias/images/corr.png" alt="Alt text 1" width="400"/>
 
