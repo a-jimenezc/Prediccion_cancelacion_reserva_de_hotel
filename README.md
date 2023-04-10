@@ -9,13 +9,13 @@ Las librerias necesarias están listadas en requirements.txt. También se incluy
 
 ### Datos
 
-El conjutno de datos fue descargado de Kaggle, bajo el nombre "Hotel Reservations Dataset" y cuenta con 36275 observaciones.
+El conjunto de datos fue descargado de Kaggle, bajo el nombre "Hotel Reservations Dataset" y cuenta con 36275 observaciones.
 
 Ver la carpeta de referencias para más información.
 
 ### Exploración Inicial de Datos
 
-Se cuenta con variables numericas y categoricas. La variable objetivo cuenta con dos clases.
+Se cuenta con variables numéricas y categóricas. La variable objetivo cuenta con dos clases.
 
 <img src="referencias/images/target.png" alt="Alt text 1" width="400"/>
 
