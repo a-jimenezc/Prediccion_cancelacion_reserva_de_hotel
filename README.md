@@ -19,7 +19,7 @@ Se cuenta con variables numericas y categoricas. La variable objetivo cuenta con
 
 <img src="referencias/images/target.png" alt="Alt text 1" width="300"/>
 
-Luego, se puede observar que existe correlación entre ciertas variables numéricasy la variable objetivo. Se usa la correlación de Spearman, dado que se tiene una variable binaria y varialbles continuas. 
+Además se puede observar que existe correlación entre ciertas variables numéricasy la variable objetivo. Se usa la correlación de Spearman, dado que se tiene una variable binaria y varialbles continuas. 
 
 <img src="referencias/images/corr.png" alt="Alt text 1" width="300"/>
 
@@ -40,7 +40,7 @@ El algoritmo seleccionado es "Gradient Boosting", con "learning_rate=1" y "n_est
 Finalmente, se evaluan distintas métricas para el algoritmo seleccionado.
 
 
-<img src="referencias/images/result.png" alt="Alt text 1" width="600"/> 
+<img src="referencias/images/result.PNG" alt="Alt text 1" width="600"/> 
 
 De los resultados, se puede ver que el modelo se desempeña bastante bien con ambas clases. Si bien la métrica "recall" de la clase "canceled" (que mide que tan bien clasifica los valores positivos de esta clase) esta baja relativa a la de la clase "not_canceled", su valor esta dentro de un margen aceptable.
 
