@@ -17,7 +17,7 @@ Ver la carpeta de referencias para más información.
 
 Se cuenta con variables numericas y categoricas. La variable objetivo cuenta con dos clases.
 
-<img src="referencias/images/target.png" alt="Alt text 1" width="200"/>
+<img src="referencias/images/target.png" alt="Alt text 1" width="300"/>
 
 Luego, se puede observar que existe correlación entre ciertas variables numéricasy la variable objetivo. Se usa la correlación de Spearman, dado que se tiene una variable binaria y varialbles continuas. 
 
