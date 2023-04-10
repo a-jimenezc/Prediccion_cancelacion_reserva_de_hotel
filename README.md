@@ -24,7 +24,7 @@ Además se puede observar que existe correlación entre ciertas variables numér
 <img src="referencias/images/corr.png" alt="Alt text 1" width="400"/>
 
 ### Construcción del modelo
-Cuatro modelos diferentes: Logistic Regression, K-Nearest Neighbor, Extra Tree Classifier, Gradient Boosing. En cada caso,  se determinaron los mejores hiper-parámetros utilizando Grid Search. Para tal propósito, se usó la libreria Scikit-learn.
+Se entrenaron cuatro modelos diferentes: Logistic Regression, K-Nearest Neighbor, Extra Tree Classifier, Gradient Boosting. En cada caso,  se determinaron los mejores hiperparámetros utilizando Grid Search. Para tal propósito, se usó la libreria Scikit-learn.
 
 ### Selección del modelo
 
@@ -32,7 +32,7 @@ A continuación se ilustra los resultados de cada uno de los modelos. La métric
 
 <img src="referencias/images/scores.png" alt="Alt text 1" width="600"/>
 
-El algoritmo seleccionado es "Gradient Boosting", con "learning_rate=1" y "n_estimators=600"
+El algoritmo seleccionado es "Gradient Boosting", con "learning_rate=1" y "n_estimators=600".
 
 
 ### Resultados del Modelo
@@ -47,7 +47,7 @@ De los resultados, se puede ver que el modelo se desempeña bastante bien con am
 
 ### Conclusiones
 
-"Gradient Boosting" es el modelo que mejor se desempeña, este consigue resultados satisfactorios. Sin embargo, todavía es posible mejorar este modelo buscando de forma exhaustiva hiperparámetros más óptimos. Además, si se desea interpretabilidad, es necesario usar técnicas especiales para tal propósito, dada la complejidad del mismo.
+"Gradient Boosting" es el modelo que mejor se desempeña, este consigue resultados satisfactorios. Sin embargo, todavía es posible mejorarlo buscando de forma exhaustiva hiperparámetros más óptimos. Además, si se desea interpretabilidad, es necesario usar técnicas especiales para tal propósito, dada la complejidad del modelo.
 
 ### Contacto
 
