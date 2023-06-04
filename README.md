@@ -51,7 +51,5 @@ De los resultados, se puede ver que el modelo se desempeña bastante bien con am
 
 ### Contacto
 
-jimenezc.bo@gmail.com  
-
-antonio.jimzC@gmail.com
+[Linkedin](https://www.linkedin.com/in/antonio-jimnzc/)
 
